@@ -1,0 +1,17 @@
+[
+    {
+        "curseID": 462609,
+        "repoName": "Aquafied",
+        "maven": "https://maven.nanite.dev/releases/com/sunekaer/mods/Aquafied"
+    },
+    {
+        "curseID": 324888,
+        "repoName": "ToolKit",
+        "maven": "https://maven.nanite.dev/releases/com/sunekaer/mods/ToolKit"
+    },
+    {
+        "curseID": 331723,
+        "repoName": "Bamboo-Everything",
+        "maven": "https://maven.nanite.dev/releases/dev/wuffs/bambooeverything"
+    }
+]
