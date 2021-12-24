@@ -1,18 +1,19 @@
 name: Issue Report
 description: Report an issue with the mod
-title: "[Issue]"
-labels: []
+title: '[Issue]'
 body:
   - type: input
     id: modVer
     attributes:
       label: Mod version
-      description: |
+      description: >
         What version of the mod are you using?
-        The version can be found from either the file name or the mods list on the main menu
+
+        The version can be found from either the file name or the mods list on
+        the main menu
       placeholder: e.g 1.0.8+mc1.16.5
     validations:
-        required: true
+      required: true
   - type: input
     id: forgeVer
     attributes:
@@ -20,8 +21,6 @@ body:
       description: |
         The version of the forge mod loader that is being used
       placeholder: e.g 37.0.34
-    validations:
-      required: false
   - type: checkboxes
     id: repeatable
     attributes:
@@ -29,8 +28,16 @@ body:
       description: |
         Is the issue you are having repeatable?
       options:
-        - label: "Yes"
-          required: false
+        - label: 'Yes'
+          validations:
+            required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Link to logs
+      description: Add any link to log files here
+    validations:
+      required: true
   - type: textarea
     id: reproduce
     attributes:
@@ -43,8 +50,6 @@ body:
         2. Click on ...
         3. Scroll down to ...
         4. See error
-    validations:
-      required: false
   - type: textarea
     id: issueDescription
     attributes:
@@ -59,4 +64,10 @@ body:
       label: Information
       options:
         - label: I have provided as much information as possible
-          required: true
+          validations:
+            required: false
+  - type: markdown
+    attributes:
+      value: >-
+        This template was generated with [Issue Forms
+        Creator](https://www.issue-forms-creator.app/)
