@@ -1,27 +1,35 @@
 name: Issue Report
 description: Report an issue with the mod
-title: "[Issue]"
-labels: []
+title: '[Issue]'
 body:
+  - type: input
+    id: mcVer
+    attributes:
+      label: Minecraft Version
+      description: What minecraft version are you using
+      placeholder: 1.19.2
+    validations:
+      required: true
+  - type: input
+    id: forgeVer
+    attributes:
+      label: Modloader
+      description: The modloader and version you are using
+      placeholder: e.g forge-37.0.34
+    validations:
+      required: true
   - type: input
     id: modVer
     attributes:
       label: Mod version
-      description: |
+      description: >
         What version of the mod are you using?
-        The version can be found from either the file name or the mods list on the main menu
+
+        The version can be found from either the file name or the mods list on
+        the main menu
       placeholder: e.g 1.0.8+mc1.16.5
     validations:
-        required: true
-  - type: input
-    id: forgeVer
-    attributes:
-      label: Forge mod loader version
-      description: |
-        The version of the forge mod loader that is being used
-      placeholder: e.g 37.0.34
-    validations:
-      required: false
+      required: true
   - type: checkboxes
     id: repeatable
     attributes:
@@ -29,7 +37,7 @@ body:
       description: |
         Is the issue you are having repeatable?
       options:
-        - label: "Yes"
+        - label: 'Yes'
           required: false
   - type: textarea
     id: logs
@@ -51,8 +59,6 @@ body:
         2. Click on ...
         3. Scroll down to ...
         4. See error
-    validations:
-      required: false
   - type: textarea
     id: issueDescription
     attributes:
@@ -68,3 +74,8 @@ body:
       options:
         - label: I have provided as much information as possible
           required: true
+  - type: markdown
+    attributes:
+      value: >-
+        This template was generated with [Issue Forms
+        Creator](https://issue-forms-creator.netlify.app)
