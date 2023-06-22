@@ -31,6 +31,16 @@ body:
     validations:
       required: true
   - type: checkboxes
+    id: latestVersion
+    attributes:
+      label: Latest version?
+      description: >-
+        Have you confirmed if you're using the latest version of the mod that is
+        compatible with the Minecraft version you are running?
+      options:
+        - label: 'Yes'
+          required: true
+  - type: checkboxes
     id: repeatable
     attributes:
       label: Repeatable?
@@ -74,8 +84,3 @@ body:
       options:
         - label: I have provided as much information as possible
           required: true
-  - type: markdown
-    attributes:
-      value: >-
-        This template was generated with [Issue Forms
-        Creator](https://issue-forms-creator.netlify.app)
